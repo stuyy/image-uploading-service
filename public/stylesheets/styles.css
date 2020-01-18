@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    
+    position: relative;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 350px;
+}
+
+div {
+    width: 10%;
+    margin: 0 auto;
+}
+#upload-progress {
+    display: none;
+}
+
+#notification {
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    transition: left .5s;
+}
