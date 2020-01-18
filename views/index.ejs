@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Img Upload</title>
+    <link rel="stylesheet" href="/stylesheets/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<html>
+    <body>
+        <progress id="upload-progress" class="progress is-small is-primary" max="100">15%</progress>
+        <main>
+            <section>
+                <form class="file">
+                    <label class="file-label">
+                      <input class="file-input" type="file" accept="image/x-png,image/gif,image/jpeg,image/jpg">
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="fas fa-upload"></i>
+                        </span>
+                        <span class="file-label">
+                          Choose a file…
+                        </span>
+                      </span>
+                    </label>
+                    <span class="file-name" id="filenamepreview">
+                        No file selected
+                    </span>
+                    <button type="button" id="upload-btn" class="button is-info">Upload</button>
+                </form>
+            </section>
+            
+            <div>
+                
+            </div>
+        </main>
+        <div class="notification is-primary" id="notification">
+            <button class="delete"></button>
+            <strong>Image Uploaded!</strong>
+        </div>
+        <script src="/scripts/index.js"></script>
+    </body>
+</html>
